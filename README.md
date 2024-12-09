@@ -1,6 +1,6 @@
-# Driveway Sealing Management System for David Smith
+# 🌎 Driveway Sealing Management System for David Smith
 ## Done by Sumaita Binte Shorif and Bhushan Pawar
-## Key Features
+## 🔑 Key Features
 
 * Client Registration: Clients can register with their personal details including name, address, credit card information, and contact details. A unique client ID is generated upon registration.
 
@@ -12,13 +12,13 @@
 
 * Billing System: Bills are generated after work completion, with functionalities for payment or dispute resolution.
 
-## Dashboards:
+## ✅ Dashboards:
 
 * Contractor Dashboard: View and manage requests, orders, bills, and generate revenue reports.
 
 * Client Dashboard: View and respond to quotes, orders, and bills.
 
-## Additional Functionalities
+## 📝 Additional Functionalities
 
 * Client and contractor negotiation loops for both quotes and bills.
 
