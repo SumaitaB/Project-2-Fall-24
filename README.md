@@ -1,5 +1,30 @@
+# Driveway Sealing Management System for David Smith
 
-README.md
+## Key Features
+
+* Client Registration: Clients can register with their personal details including name, address, credit card information, and contact details. A unique client ID is generated upon registration.
+
+* Request for Quote: Clients can submit a quote request with property details, driveway size, proposed price, pictures, and additional notes.
+
+* Quote Management: David Smith can accept, reject, or negotiate requests with counterproposals including adjusted pricing and work schedules.
+
+* Order of Work: Clients can accept quotes to create contracts for work.
+
+* Billing System: Bills are generated after work completion, with functionalities for payment or dispute resolution.
+
+## Dashboards:
+
+* Contractor Dashboard: View and manage requests, orders, bills, and generate revenue reports.
+
+* Client Dashboard: View and respond to quotes, orders, and bills.
+
+## Additional Functionalities
+
+* Client and contractor negotiation loops for both quotes and bills.
+
+* Evidence tracking for potential legal disputes.
+
+* Revenue reporting for specific periods.
 
 # 📊 Task Platform
 
