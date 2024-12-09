@@ -29,6 +29,7 @@ VALUES
 ('Arthur', 'Curry', 'arthur.curry@example.com', 'aqua789', '5550001112', false, '90 Atlantis Road', '5999999999999999', '01/34', '667'),
 ('Wanda', 'Maximoff', 'wanda.maximoff@example.com', 'scarlet202', '5553334455', false, '60 Hex Circle', '6011000990139426', '02/35', '778');
 
+
 INSERT INTO users (firstName, lastName, email, password, phone, isAdmin, address, cardNumber, expiry, cvc)
 VALUES
 ('Logan', 'Howlett', 'logan.howlett@example.com', 'wolverine123', '5554441122', false, '101 Xavier Mansion', '6111111111111111', '03/36', '889'),
