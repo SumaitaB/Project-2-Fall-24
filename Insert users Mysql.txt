@@ -23,17 +23,3 @@ VALUES
 ('Bruce', 'Wayne', 'bruce.wayne@example.com', 'batman789', '5551112233', true, '100 Wayne Manor', '5333333333333333', '07/28', '987'),
 ('Tony', 'Stark', 'tony.stark@example.com', 'ironman999', '5554445566', true, '300 Stark Tower', '5444444444444444', '08/29', '112'),
 ('Steve', 'Rogers', 'steve.rogers@example.com', 'cap123', '5556667788', false, '120 Shield Ave', '5555555555555555', '09/30', '223'),
-('Natasha', 'Romanoff', 'natasha.romanoff@example.com', 'blackwidow202', '5558889900', false, '50 Red Room St', '5666666666666666', '10/31', '334'),
-('Diana', 'Prince', 'diana.prince@example.com', 'wonder123', '5557778899', false, '123 Themyscira Blvd', '5777777777777777', '11/32', '445'),
-('Barry', 'Allen', 'barry.allen@example.com', 'flash456', '5559990001', false, '40 Central City', '5888888888888888', '12/33', '556'),
-('Arthur', 'Curry', 'arthur.curry@example.com', 'aqua789', '5550001112', false, '90 Atlantis Road', '5999999999999999', '01/34', '667'),
-('Wanda', 'Maximoff', 'wanda.maximoff@example.com', 'scarlet202', '5553334455', false, '60 Hex Circle', '6011000990139426', '02/35', '778');
-
-
-INSERT INTO users (firstName, lastName, email, password, phone, isAdmin, address, cardNumber, expiry, cvc)
-VALUES
-('Logan', 'Howlett', 'logan.howlett@example.com', 'wolverine123', '5554441122', false, '101 Xavier Mansion', '6111111111111111', '03/36', '889'),
-('Jean', 'Grey', 'jean.grey@example.com', 'phoenix456', '5556677889', false, '200 Mutant Lane', '6222222222222222', '04/37', '990'),
-('Charles', 'Xavier', 'charles.xavier@example.com', 'professorx789', '5550002233', true, '101 Xavier Mansion', '6333333333333333', '05/38', '101'),
-('Erik', 'Lensherr', 'erik.lensherr@example.com', 'magneto999', '5555566778', true, '202 Magnet Blvd', '6444444444444444', '06/39', '212'),
-('Raven', 'Darkholme', 'raven.darkholme@example.com', 'mystique202', '5559988776', false, '300 Shapeshifter St', '6555555555555555', '07/40', '323');
