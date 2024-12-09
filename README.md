@@ -1,11 +1,9 @@
 
 README.md
 
-markdown
-Copy code
 # 📊 Task Platform
 
-This project is a simple trading platform that allows users to manage investments, transactions, and stock prices. It is built with a **frontend-backend** structure using **Node.js, Express.js, MySQL, and a modern front-end framework**.
+This project is a web-based system designed for managing driveway sealing services for a contractor, David Smith. The system facilitates interactions between the contractor and clients, allowing for request submission, negotiation, billing, and dispute resolution. It is built with a **frontend-backend** structure using **Node.js, Express.js, MySQL, and a modern front-end framework**.
 
 ---
 
@@ -23,8 +21,6 @@ This project is a simple trading platform that allows users to manage investment
 2. Open your browser and navigate to:  
 http://localhost/phpmyadmin
 
-markdown
-Copy code
 3. Create a new database (you can name it `task` or as specified in the `sql.txt` file).  
 4. **Run the SQL Queries** from the `sql.txt` file located in the **project root folder**.  
 - Click **Import** in phpMyAdmin and upload `sql.txt`, or  
@@ -112,5 +108,3 @@ If you'd like to contribute to this project, feel free to fork the repo and crea
 
 📄 License
 This project is licensed under the MIT License.
-
-🎉 That's it! If you face any issues, double-check the instructions or drop a message in the issue tracker.
