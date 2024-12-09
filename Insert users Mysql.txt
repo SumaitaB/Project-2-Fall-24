@@ -22,4 +22,4 @@ VALUES
 ('Clark', 'Kent', 'clark.kent@example.com', 'superman456', '5559876543', false, '193 Kent Lane', '5222222222222222', '06/27', '654'),
 ('Bruce', 'Wayne', 'bruce.wayne@example.com', 'batman789', '5551112233', true, '100 Wayne Manor', '5333333333333333', '07/28', '987'),
 ('Tony', 'Stark', 'tony.stark@example.com', 'ironman999', '5554445566', true, '300 Stark Tower', '5444444444444444', '08/29', '112'),
-('Steve', 'Rogers', 'steve.rogers@example.com', 'cap123', '5556667788', false, '120 Shield Ave', '5555555555555555', '09/30', '223'),
+('Steve', 'Rogers', 'steve.rogers@example.com', 'cap123', '5556667788', false, '120 Shield Ave', '5555555555555555', '09/30', '223');
