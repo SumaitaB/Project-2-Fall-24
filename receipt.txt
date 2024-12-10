@@ -1,0 +1,28 @@
+INSERT INTO receipt (amount, userId, quoteId, paid, payment_status, offer)
+VALUES
+(2300, 2, 9, true, 'ACCEPTED', 100),
+(2050, 2, 5, true, 'ACCEPTED', 50);
+
+
+INSERT INTO receipt (amount, userId, quoteId, paid, payment_status, offer)
+VALUES
+(1950, 3, 8, false, 'PENDING', 50),
+(2400, 3, 9, true, 'ACCEPTED', 100),
+(1750, 3, 3, false, 'PENDING', 50),
+(2750, 3, 4, true, 'ACCEPTED', 150);
+
+INSERT INTO receipt (amount, userId, quoteId, paid, payment_status, offer)
+VALUES
+(1900, 5, 8, true, 'ACCEPTED', 100),
+(2400, 5, 9, true, 'ACCEPTED', 150),
+(2750, 5, 4, true, 'ACCEPTED', 200);
+INSERT INTO receipt (amount, userId, quoteId, paid, payment_status, offer)
+VALUES
+(2100, 6, 8, true, 'ACCEPTED', 100),
+(1750, 6, 9, true, 'ACCEPTED', 50),
+(1950, 6, 4, true, 'ACCEPTED', 100);
+INSERT INTO receipt (amount, userId, quoteId, paid, payment_status, offer)
+VALUES
+(1800, 7, 8, true, 'ACCEPTED', 100),
+(2400, 7, 9, true, 'ACCEPTED', 150),
+(1750, 7, 4, true, 'ACCEPTED', 50);

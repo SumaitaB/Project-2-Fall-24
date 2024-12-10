@@ -2,15 +2,15 @@ INSERT INTO users (firstName, lastName, email, password, phone, isAdmin, address
 VALUES 
 ('Alice', 'Smith', 'alice.smith@example.com', 'password123', '1234567890', false, '123 Elm Street', '4111111111111111', '12/25', '123'),
 ('Bob', 'Jones', 'bob.jones@example.com', 'securepass456', '9876543210', false, '456 Maple Avenue', '4222222222222222', '11/24', '456'),
-('Charlie', 'Brown', 'charlie.brown@example.com', 'mypassword789', '5678901234', true, '789 Pine Road', '4333333333333333', '10/23', '789'),
+('Charlie', 'Brown', 'charlie.brown@example.com', 'mypassword789', '5678901234', false, '789 Pine Road', '4333333333333333', '10/23', '789'),
 ('David', 'Johnson', 'david.johnson@example.com', 'letmein101', '1112223333', false, '321 Oak Lane', '4444444444444444', '09/26', '101'),
 ('Emily', 'Davis', 'emily.davis@example.com', 'qwerty123', '2223334444', false, '654 Birch Boulevard', '4555555555555555', '08/27', '202'),
-('Frank', 'Miller', 'frank.miller@example.com', 'password321', '3334445555', true, '987 Cedar Street', '4666666666666666', '07/28', '303'),
+('Frank', 'Miller', 'frank.miller@example.com', 'password321', '3334445555', false, '987 Cedar Street', '4666666666666666', '07/28', '303'),
 ('Grace', 'Wilson', 'grace.wilson@example.com', 'secureme999', '4445556666', false, '246 Spruce Circle', '4777777777777777', '06/29', '404'),
 ('Hannah', 'Moore', 'hannah.moore@example.com', 'topsecret202', '5556667777', false, '135 Fir Way', '4888888888888888', '05/30', '505'),
 ('Ian', 'Taylor', 'ian.taylor@example.com', 'mypassword111', '6667778888', false, '975 Walnut Avenue', '4999999999999999', '04/31', '606'),
 ('Jessica', 'Anderson', 'jessica.anderson@example.com', 'newpass555', '7778889999', false, '753 Ash Drive', '4012888888881881', '03/32', '707'),
-('Kevin', 'Thomas', 'kevin.thomas@example.com', 'supersecure777', '8889990000', true, '357 Hickory Road', '4012888888881882', '02/33', '808'),
+('Kevin', 'Thomas', 'kevin.thomas@example.com', 'supersecure777', '8889990000', false, '357 Hickory Road', '4012888888881882', '02/33', '808'),
 ('Laura', 'Martin', 'laura.martin@example.com', 'letmein333', '9990001111', false, '159 Chestnut Lane', '6011000990139424', '01/34', '909'),
 ('Michael', 'Garcia', 'michael.garcia@example.com', 'mypassword123', '0001112222', false, '753 Oak Circle', '3530111333300000', '12/35', '110'),
 ('Nina', 'Martinez', 'nina.martinez@example.com', 'password789', '1112223334', false, '159 Maple Avenue', '6011000990139425', '11/36', '220'),
@@ -20,6 +20,6 @@ INSERT INTO users (firstName, lastName, email, password, phone, isAdmin, address
 VALUES
 ('Peter', 'Parker', 'peter.parker@example.com', 'spidey123', '5551234567', false, '20 Queens Blvd', '5111111111111111', '05/26', '321'),
 ('Clark', 'Kent', 'clark.kent@example.com', 'superman456', '5559876543', false, '193 Kent Lane', '5222222222222222', '06/27', '654'),
-('Bruce', 'Wayne', 'bruce.wayne@example.com', 'batman789', '5551112233', true, '100 Wayne Manor', '5333333333333333', '07/28', '987'),
-('Tony', 'Stark', 'tony.stark@example.com', 'ironman999', '5554445566', true, '300 Stark Tower', '5444444444444444', '08/29', '112'),
+('Bruce', 'Wayne', 'bruce.wayne@example.com', 'batman789', '5551112233', false, '100 Wayne Manor', '5333333333333333', '07/28', '987'),
+('Tony', 'Stark', 'tony.stark@example.com', 'ironman999', '5554445566', false, '300 Stark Tower', '5444444444444444', '08/29', '112'),
 ('Steve', 'Rogers', 'steve.rogers@example.com', 'cap123', '5556667788', false, '120 Shield Ave', '5555555555555555', '09/30', '223');
