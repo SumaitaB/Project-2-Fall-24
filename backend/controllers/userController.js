@@ -1,6 +1,8 @@
 const db = require("../db/connection");
+const jwt = require('jsonwebtoken');
+const bcrypt = require('bcrypt');
 
-const createUser = (req, res) => {
+const createUser = async (req, res) => {
   const {
     firstName,
     lastName,
@@ -17,6 +19,8 @@ const createUser = (req, res) => {
     return res.status(400).send("Fields are required");
   }
 
+  const hashedPassword = await bcrypt.hash(password, 10);  // Hash the password using bcrypt with 10 salt rounds
+
   // Insert the user into the database
   db.query(
     `INSERT INTO users (firstName, lastName, email, password, phone, address, cardNumber, expiry, cvc)
@@ -25,7 +29,7 @@ const createUser = (req, res) => {
       firstName,
       lastName,
       email,
-      password,
+      hashedPassword,
       phone,
       address,
       cardNumber,
@@ -64,19 +68,24 @@ const loginUser = (req, res) => {
 
   // Find the user in the database
   db.query(
-    `SELECT * FROM users WHERE email = ? AND password = ?`,
-    [email, password],
+    `SELECT * FROM users WHERE email = ?`,
+    [email],
     async (err, results) => {
-      if (err) {
-        return res.status(500).send("Error retrieving user");
+      if (err || results.length === 0) {
+        return res.status(400).send('User not found' );  // Send error response if user is not found
+      }
+      const user = results[0];  // Get the user record from the query result
+      const passwordMatch = await bcrypt.compare(password, user.password);  // Compare the provided password with the hashed password
+  
+      if (!passwordMatch) {
+        return res.status(401).send( 'Invalid credentials' );  // Send error response if the password does not match
       }
 
-      if (results.length === 0) {
-        return res.status(401).send("Invalid email or password");
-      }
+      // Generate a JWT token with the user ID and a secret key, valid for 3 hour
+      const token = jwt.sign({ userId: user.id }, 'your_jwt_secret', { expiresIn: 30 }); //https://www.npmjs.com/package/jsonwebtoken
 
-      const user = results[0];
-      res.json(user);
+      // res.json(user);
+      res.json({ token });
     }
   );
 };

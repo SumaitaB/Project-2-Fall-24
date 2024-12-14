@@ -1,4 +1,5 @@
 const db = require("../db/connection");
+const jwt = require('jsonwebtoken');
 
 const basicAuth = (req, res, next) => {
   try {
