@@ -47,4 +47,20 @@ const basicAuth = (req, res, next) => {
   }
 };
 
-module.exports = { basicAuth };
+
+// Middleware function to authenticate JWT tokens
+const authenticateToken = (req, res, next) => {
+  const token = req.headers['authorization'];  // Get the token from the 'Authorization' header
+
+  if (!token) return res.status(401).json({ message: 'Access denied' });  // If no token is provided, deny access
+
+  // Verify the JWT token
+  jwt.verify(token, 'your_jwt_secret', (err, user) => {
+    if (err) return res.status(403).json({ message: 'Invalid token' });  // If the token is invalid, send a 403 error
+    req.user = user;  // Store the decoded user data in the request object
+    next();  // Proceed to the next middleware/route handler
+  });
+};
+
+
+module.exports = { basicAuth, authenticateToken };

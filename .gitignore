@@ -43,6 +43,7 @@ build/Release
 backend/node_modules/
 frontend/node_modules/
 jspm_packages/
+backend/uploads/*
 
 # Snowpack dependency directory (https://snowpack.dev/)
 web_modules/

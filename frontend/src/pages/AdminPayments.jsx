@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import AdminDashboardComponent from "../components/AdminDashboardComponent";
-import Img1 from "../Data/Img/img-1.png";
 import useAuth from "../hooks/useAuth";
 import axios from "axios";
 import url from "../variables/url";

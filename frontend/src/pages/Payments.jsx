@@ -1,6 +1,4 @@
 import PropTypes from "prop-types";
-import Img1 from "../Data/Img/img-1.png";
-import Img2 from "../Data/Img/img-2.jpeg";
 import DashboardComponent from "../components/DashboardComponent";
 import { useEffect, useState } from "react";
 import useAuth from "../hooks/useAuth";
