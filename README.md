@@ -143,26 +143,22 @@ npm cache clean --force</br>
 * System Implementation:
         Implemented the backend logic for user authentication and quote processing.
         Handled the integration between the database and the web-based interface.
-        Time Spent: 8 hours.
+        Time Spent: 8 hours est. 
 
 * Performance Optimization:
     Optimized SQL queries to improve response times for data-intensive operations.
-    Used database indexing and caching strategies to enhance backend performance.
-  Time Spent: 5 hours
+  Time Spent: 5 hours est
   
 * Testing and Debugging:
-        Conducted end-to-end testing for the system.
-        Fixed bugs related to database constraints and frontend-backend communication.
-        Time Spent: 5 hours.
+        Conducted testing.
+        Fixed bugs related to database and frontend-backend communication.
+        Time Spent: 5 hours est.
 * API Development:
-
-    Developed RESTful APIs for user registration, login, quote management, and receipt handling.
-    Implemented secure authentication mechanisms using JSON Web Tokens (JWT) for user sessions.
-  Time spet: 4 hours
+    Developed API routes for user registration, login, quote management, and receipt handling.
+    Implemented secure basic authentication mechanism for user sessions.
+  Time spet: 4 hours est
  * Documentation:
-        Compiled the user and developer manuals.
-        Created diagrams and explained the overall system architecture.
-        Time Spent: 5 hours.
+
 
    
 ## 📂 Project Structure</br>
