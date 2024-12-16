@@ -29,7 +29,7 @@ const createUser = async (req, res) => {
       firstName,
       lastName,
       email,
-      hashedPassword,
+      password,
       phone,
       address,
       cardNumber,
@@ -68,24 +68,42 @@ const loginUser = (req, res) => {
 
   // Find the user in the database
   db.query(
-    `SELECT * FROM users WHERE email = ?`,
-    [email],
+    `SELECT * FROM users WHERE email = ? AND password = ?`,
+    [email, password],
     async (err, results) => {
-      if (err || results.length === 0) {
-        return res.status(400).send('User not found' );  // Send error response if user is not found
+      if (err) {
+        return res.status(500).send("Error retrieving user");
       }
-      const user = results[0];  // Get the user record from the query result
-      const passwordMatch = await bcrypt.compare(password, user.password);  // Compare the provided password with the hashed password
+
+      const user = results[0];
+
+       
+      if (results.length === 0)  {
+        return res.status(401).send("Invalid email or password");
+      }
+
   
-      if (!passwordMatch) {
-        return res.status(401).send( 'Invalid credentials' );  // Send error response if the password does not match
-      }
+    res.json(user);
+      ///////////////
 
-      // Generate a JWT token with the user ID and a secret key, valid for 3 hour
-      const token = jwt.sign({ userId: user.id }, 'your_jwt_secret', { expiresIn: 30 }); //https://www.npmjs.com/package/jsonwebtoken
 
-      // res.json(user);
-      res.json({ token });
+    // `SELECT * FROM users WHERE email = ?`,
+    // [email],
+    // async (err, results) => {
+    //   if (err || results.length === 0) {
+    //     return res.status(400).send('User not found' );  // Send error response if user is not found
+    //   }
+    //   const user = results[0];  // Get the user record from the query result
+    //   const passwordMatch = await bcrypt.compare(password, user.password);  // Compare the provided password with the hashed password
+  
+    //   if (!passwordMatch) {
+    //     return res.status(401).send( 'Invalid credentials' );  // Send error response if the password does not match
+    //   }
+
+    //   // Generate a JWT token with the user ID and a secret key, valid for 3 hour
+    //   const token = jwt.sign({ userId: user.id }, 'your_jwt_secret', { expiresIn: "3h" }); //https://www.npmjs.com/package/jsonwebtoken
+
+    //   res.json({ token });
     }
   );
 };
